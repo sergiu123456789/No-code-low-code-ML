@@ -72,3 +72,42 @@ Key metrics to examine:
 * **RMSE / MAE**: lower is better
 * **R²**: closer to 1 is better
 * **Residual plots**: watch for heteroskedasticity and outliers
+
+## 5) Deploy the model to an endpoint (for online predictions)
+
+## 6) Make predictions
+
+# Load new data 
+
+## 7) Governance & Responsible AI notes
+
+This is a statistical estimate, not an admissions decision engine.
+
+Avoid using this in ways that could influence or gate real applications without human oversight.
+
+Monitor data drift (e.g., changing score distributions across years) and model bias (e.g., towards certain universities).
+
+Log predictions and evaluate periodically.
+
+## 8) Cost & cleanup
+
+Costs come from training, endpoint compute, storage, and optionally BigQuery.
+
+For dev/test, set a small training budget and delete endpoints when not in use.
+
+# Delete endpoint (and undeploy model)
+
+# (Optional) Delete model
+
+## 9) Troubleshooting tips
+
+Schema mismatch: ensure column names/types in CSV match training schema.
+
+Missing values: let AutoML handle, or impute before upload.
+
+Low R²: add more data, try feature interactions, consider custom models.
+
+Region mixups: use the same REGION everywhere (dataset, training, endpoint).
+
+
+
