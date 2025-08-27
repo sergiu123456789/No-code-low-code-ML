@@ -95,9 +95,9 @@ Costs come from training, endpoint compute, storage, and optionally BigQuery.
 
 For dev/test, set a small training budget and delete endpoints when not in use.
 
-# Delete endpoint (and undeploy model)
+### Delete endpoint (and undeploy model)
 
-# (Optional) Delete model
+### (Optional) Delete model
 
 ## 9) Troubleshooting tips
 
