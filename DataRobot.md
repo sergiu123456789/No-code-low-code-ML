@@ -50,8 +50,3 @@ emp_length_int,home_ownership,income_category,annual_inc,loan_amount,term,applic
 ## 3. Validation & Evaluation
 
 * Use the **Leaderboard** to inspect cross-validated metrics (AUC, LogLoss, recall, precision). For imbalanced classes consider using **F1** or a custom metric.
-* Run the following checks in CI before deploying:
-
-  * Unit tests for preprocessing logic (if any).
-  * Small evaluation run on a holdout set (DataRobot supports backtesting and setting validation partitions).
-* Consider using **Feature Impact** and \*\*Partial Dependence
